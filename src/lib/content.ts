@@ -1,7 +1,17 @@
+import {
+  Dumbbell,
+  Salad,
+  LineChart,
+  Flame,
+  Users,
+  Compass,
+  type LucideIcon,
+} from "lucide-react";
+
 export const NAV_LINKS = [
+  { label: "The Method", href: "#method" },
   { label: "Nutrition", href: "#nutrition" },
-  { label: "Recipes", href: "#recipes" },
-  { label: "My Story", href: "#transformation" },
+  { label: "Roadmap", href: "#roadmap" },
   { label: "Membership", href: "#membership" },
   { label: "FAQ", href: "#faq" },
   { label: "Get Started", href: "#contact" },
@@ -15,6 +25,83 @@ export const MARQUEE_WORDS = [
   "Recover hard",
   "Repeat",
 ] as const;
+
+// --- Method / features (six-box overview) ------------------------------------
+
+export interface Feature {
+  icon: LucideIcon;
+  title: string;
+  body: string;
+}
+
+export const FEATURES: Feature[] = [
+  {
+    icon: Dumbbell,
+    title: "Custom Training",
+    body: "Programming built around your body, your schedule and your equipment — reviewed and adjusted every single week.",
+  },
+  {
+    icon: Salad,
+    title: "Nutrition That Fits",
+    body: "Flexible meal plans with macro targets you can actually live with. No chicken-and-rice prison sentences.",
+  },
+  {
+    icon: LineChart,
+    title: "Progress Tracking",
+    body: "Lifts, measurements, photos and habits in one dashboard, so the trend line does the motivating for you.",
+  },
+  {
+    icon: Flame,
+    title: "Built Discipline",
+    body: "Daily check-ins and streaks that turn showing up into a reflex. Motivation fades — systems don't.",
+  },
+  {
+    icon: Users,
+    title: "The Circle",
+    body: "A private community of people mid-transformation. Accountability you can't buy off a shelf.",
+  },
+  {
+    icon: Compass,
+    title: "The Method",
+    body: "One proven system from first session to final photo. No guesswork, no fad detours, no wasted months.",
+  },
+];
+
+// --- Roadmap (6-month journey, 4 stages) -------------------------------------
+
+export interface Stage {
+  number: string;
+  title: string;
+  months: string;
+  body: string;
+}
+
+export const ROADMAP: Stage[] = [
+  {
+    number: "01",
+    title: "Foundations",
+    months: "Month 1",
+    body: "Movement quality, baseline strength and the habits everything else stands on.",
+  },
+  {
+    number: "02",
+    title: "Growth",
+    months: "Months 2–3",
+    body: "Progressive overload kicks in. Volume climbs, plates get added, sleeves get tighter.",
+  },
+  {
+    number: "03",
+    title: "Refinement",
+    months: "Months 4–5",
+    body: "Dial in nutrition and conditioning to strip body fat while the muscle stays.",
+  },
+  {
+    number: "04",
+    title: "Re-Evaluation",
+    months: "Month 6",
+    body: "Retest every lift, remeasure everything, and set the next six months on fire.",
+  },
+];
 
 // --- Nutrition (image 2) -----------------------------------------------------
 
