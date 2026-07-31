@@ -42,7 +42,7 @@ export function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: AFTER_LOADER, duration: 0.6 }}
         >
-          Strength club — est. 2019
+          Online Coaching — India
         </m.p>
 
         <h1 className="font-display text-[16vw] leading-[0.9] uppercase sm:text-8xl lg:text-[7.5rem]">
@@ -60,17 +60,17 @@ export function Hero() {
           transition={{ delay: AFTER_LOADER + 0.7, duration: 0.7, ease: EASE }}
         >
           <p className="max-w-md text-base text-muted-foreground sm:text-lg">
-            Coaching, programming and a community that won&apos;t let you quit. Commit for 6 months
-            — change your life forever.
+            Training and nutrition written for your body, your schedule and the food you actually
+            eat. Reviewed every week by your coach.
           </p>
-          <div className="flex shrink-0 items-center gap-3">
+          <div className="flex shrink-0 flex-wrap items-center gap-3">
             <Button asChild size="lg" className="font-semibold uppercase">
-              <Link href="#membership">
-                Start today <ArrowRight aria-hidden="true" />
+              <Link href="#contact">
+                Start today — ₹2,499 <ArrowRight aria-hidden="true" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="font-semibold uppercase">
-              <Link href="#method">The method</Link>
+              <Link href="#nutrition">See the method</Link>
             </Button>
           </div>
         </m.div>

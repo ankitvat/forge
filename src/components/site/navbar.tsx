@@ -44,7 +44,7 @@ export function Navbar() {
         </ul>
 
         <Button asChild size="sm" className="font-semibold uppercase">
-          <Link href="#membership">Join the club</Link>
+          <Link href="#contact">Start today</Link>
         </Button>
       </nav>
     </m.header>

@@ -3,12 +3,12 @@ import { Preloader } from "@/components/motion/preloader";
 import { Navbar } from "@/components/site/navbar";
 import { Hero } from "@/components/site/hero";
 import { MarqueeBand } from "@/components/site/marquee-band";
-import { Features } from "@/components/site/features";
-import { Roadmap } from "@/components/site/roadmap";
-import { Coach } from "@/components/site/coach";
+import { Nutrition } from "@/components/site/nutrition";
+import { Recipes } from "@/components/site/recipes";
+import { Transformation } from "@/components/site/transformation";
 import { Pricing } from "@/components/site/pricing";
 import { Faq } from "@/components/site/faq";
-import { Cta } from "@/components/site/cta";
+import { Contact } from "@/components/site/contact";
 import { Footer } from "@/components/site/footer";
 
 export default function Home() {
@@ -19,12 +19,12 @@ export default function Home() {
       <main>
         <Hero />
         <MarqueeBand />
-        <Features />
-        <Roadmap />
-        <Coach />
+        <Nutrition />
+        <Recipes />
+        <Transformation />
         <Pricing />
         <Faq />
-        <Cta />
+        <Contact />
       </main>
       <Footer />
     </MotionProvider>
